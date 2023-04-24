@@ -1,8 +1,10 @@
-width=600
-height=300
+width=500
+height=400
 location=center
+
 show=drun
-prompt=Search...
+prompt=Search
+column=5
 filter_rate=100
 allow_markup=true
 no_actions=true

@@ -21,7 +21,7 @@ get_ver() {
 set_current_background() {
     get_theme
     get_ver
-    
+
     #set the current background
     if [[ $THEMEIS == "dark.css" ]]; then
         swww img ~/.config/HyprV/backgrounds/$VER'-background-dark.jpg'
@@ -78,8 +78,8 @@ fi
 get_ver
 
 TOOLTIP='Default Keybinds\n'\
-'SUPER + Q = Start Kitty\n'\
-'SUPER + F4 = Close Window\n'\
+'SUPER + X = Start Kitty\n'\
+'SUPER + Q = Close Window\n'\
 'SUPER + L = Lock Screen\n'\
 'SUPER + M = Logout menu\n'\
 'SUPER + E = File Manager\n'\
