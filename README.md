@@ -30,13 +30,3 @@ noto-fonts-emoji lxappearance xfce4-settings sddm-git sddm-sugar-candy-git
 ```
 
 Or you can use the attached script "set-hypr" to install everything for you.
-
-Install some more software for me
-
-yay -S brave-bin VSCodium-bin ffmpeg neovim viewnior       \
-wl-clipboard wf-recorder ffmpegthumbnailer tumbler playerctl      \
-noise-suppression-for-voice pamixer     \
-nwg-look-bin nordic-theme papirus-icon-theme dunst otf-sora   \
-ttf-nerd-fonts-symbols-common otf-firamono-nerd inter-font    \
-ttf-fantasque-nerd noto-fonts ttf-comfortaa  \
-ttf-icomoon-feather ttf-iosevka-nerd adobe-source-code-pro-fonts
