@@ -5,7 +5,7 @@
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
-    "height": 20,
+    "height": 35,
     "modules-left": ["custom/launch_wofi","custom/power_btn","custom/lock_screen","wlr/workspaces","wlr/taskbar"],
     "modules-right": ["cpu","memory","disk","temperature","custom/power_profile","battery","pulseaudio","pulseaudio#microphone","backlight","tray","custom/weather","custom/updates","clock","custom/myhyprv","custom/light_dark"],
     "include": ["~/.config/HyprV/waybar/conf/asus-rog.jsonc", "~/.config/HyprV/waybar/conf/hyprv-util.jsonc"],
@@ -50,7 +50,7 @@
     "wlr/taskbar": {
         // "format": "{icon}{name}",
         "format": "{icon}",
-        "icon-size": 16,
+        "icon-size": 25,
         "all-outputs": true,
         "tooltip-format": "{title}",
         "on-click": "activate",
@@ -61,11 +61,11 @@
     },
 
     "cpu": {
-        "interval": 10,
-        "format": "",
+        "interval": 1,
+        "format": " {usage}%",
         "max-length": 10,
         "format-alt-click": "click-right",
-        "format-alt": " {usage}%",
+        "format-alt": "",
         "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
     },
 
@@ -91,14 +91,23 @@
         "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
     },
 
+    // "temperature": {
+    //     "thermal-zone": 1,
+    //     "format": "",
+    //     "format-alt-click": "click-right",
+    //     "format-alt": " {temperatureF}°F",
+    //     "critical-threshold": 70,
+    //     "format-critical": " {temperatureC}°C",
+    //     "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
+    // },
+
     "temperature": {
-        "thermal-zone": 1,
-        "format": "",
-        "format-alt-click": "click-right",
-        "format-alt": " {temperatureF}°F",
-        "critical-threshold": 70,
-        "format-critical": " {temperatureC}°C",
-        "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
+        "exec": "$HOME/.config/HyprV/waybar/scripts/temperature-cpu-gpu.sh",
+        "critical-threshold": 80,
+        "format-critical": "{temperatureC} {icon}",
+        "format": "{temperatureC}°C {icon}",
+        "format-icons": ["", "", ""],
+        "return-type": "json"        
     },
 
     "battery": {
@@ -150,7 +159,7 @@
     },
 
     "backlight": {
-        "device": "intel_backlight",
+        // "device": "intel_backlight",
         "format": "{icon}",
         "format-alt-click": "click-right",
         "format-alt": "{icon} {percent}%",
@@ -160,7 +169,7 @@
     },
 
     "tray": {
-        "icon-size": 16,
+        "icon-size": 25,
         "spacing": 10
     },
 
@@ -182,8 +191,24 @@
     },
 
     "clock": {
-        "format": "{:%I:%M %p}",
-        "tooltip": true,
-        "tooltip-format": "{: %A, %B %e %Y}"
-    }
+        "format": "{:%H:%M}",
+        "format-alt": "{:%H:%M  %e %b %Y}",
+
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "calendar-weeks-pos": "right",
+        "today-format": "<span color='#ff6699'><b><u>{}</u></b></span>",
+        "format-calendar": "<span color='#ecc6d9'><b>{}</b></span>",
+        "format-calendar-weeks": "<span color='#99ffdd'><b>W{:%V}</b></span>",
+        "format-calendar-weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "on-scroll": {
+                    "calendar": 1
+                     },
+        "reverse-scrolling": 1
+     }
+
+    // "clock": {
+    //     "format": "{:%I:%M %p}",
+    //     "tooltip": true,
+    //     "tooltip-format": "{: %A, %B %e %Y}"
+    // }
 }
