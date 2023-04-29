@@ -12,7 +12,7 @@
 
     "custom/launch_wofi": {
         "format": "",
-        "on-click": "pkill wofi || wofi -n -c ~/.config/HyprV/wofi/config-bmenu",
+        "on-click": "pkill wofi || wofi",
         "tooltip": false
     },
 
@@ -48,7 +48,6 @@
     },
 
     "wlr/taskbar": {
-        // "format": "{icon}{name}",
         "format": "{icon}",
         "icon-size": 25,
         "all-outputs": true,
@@ -91,24 +90,24 @@
         "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
     },
 
-    // "temperature": {
-    //     "thermal-zone": 1,
-    //     "format": "",
-    //     "format-alt-click": "click-right",
-    //     "format-alt": " {temperatureF}°F",
-    //     "critical-threshold": 70,
-    //     "format-critical": " {temperatureC}°C",
-    //     "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
-    // },
-
     "temperature": {
-        "exec": "$HOME/.config/HyprV/waybar/scripts/temperature-cpu-gpu.sh",
-        "critical-threshold": 80,
-        "format-critical": "{temperatureC} {icon}",
-        "format": "{temperatureC}°C {icon}",
-        "format-icons": ["", "", ""],
-        "return-type": "json"        
+        "thermal-zone": 1,
+        "format": "",
+        "format-alt-click": "click-right",
+        "format-alt": " {temperatureC}°C",
+        "critical-threshold": 70,
+        "format-critical": " {temperatureC}°C",
+        "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
     },
+
+    // "temperature": {
+    //     "exec": "$HOME/.config/HyprV/waybar/scripts/temperature-cpu-gpu.sh",
+    //     "critical-threshold": 80,
+    //     "format-critical": "{temperatureC} {icon}",
+    //     "format": "{temperatureC}°C {icon}",
+    //     "format-icons": ["", "", ""],
+    //     "return-type": "json"        
+    // },
 
     "battery": {
         "states": {
@@ -202,13 +201,6 @@
         "format-calendar-weekdays": "<span color='#ffcc66'><b>{}</b></span>",
         "on-scroll": {
                     "calendar": 1
-                     },
-        "reverse-scrolling": 1
+                     }
      }
-
-    // "clock": {
-    //     "format": "{:%I:%M %p}",
-    //     "tooltip": true,
-    //     "tooltip-format": "{: %A, %B %e %Y}"
-    // }
 }
