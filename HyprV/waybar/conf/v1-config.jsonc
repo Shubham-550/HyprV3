@@ -33,14 +33,14 @@
         }
     },
 
-   "custom/weather" : {
-        //shows the current weather and forecast
-        "tooltip" : true,
-        "format" : "{}",
-        "interval" : 30,
-        "exec" : "~/.config/HyprV/waybar/scripts/waybar-wttr.py",
-        "return-type" : "json"
-    },
+//    "custom/weather" : {
+//         //shows the current weather and forecast
+//         "tooltip" : true,
+//         "format" : "{}",
+//         "interval" : 30,
+//         "exec" : "~/.config/HyprV/waybar/scripts/waybar-wttr.py",
+//         "return-type" : "json"
+//     },
 
     "tray": {
         "icon-size": 18,
@@ -48,12 +48,22 @@
     },
 
     "clock": {
-        "format": "{: %I:%M %p   %a, %b %e}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
-    },
+        "format": "{:%H:%M}",
+        "format-alt": "{:%H:%M  %e %b %Y}",
+
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "calendar-weeks-pos": "right",
+        "today-format": "<span color='#ff6699'><b><u>{}</u></b></span>",
+        "format-calendar": "<span color='#ecc6d9'><b>{}</b></span>",
+        "format-calendar-weeks": "<span color='#99ffdd'><b>W{:%V}</b></span>",
+        "format-calendar-weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "on-scroll": {
+                    "calendar": 1
+                     }
+     },
 
     "backlight": {
-        "device": "intel_backlight",
+        // "device": "intel_backlight",
         "format": "{icon} {percent}%",
         "format-icons": ["", "", ""],
         "on-scroll-up": "~/.config/HyprV/waybar/scripts/brightness --inc",
