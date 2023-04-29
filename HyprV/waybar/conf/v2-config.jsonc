@@ -136,7 +136,6 @@
             "critical": 20
         },
         "format": "{icon} {capacity}%",
-        "format": "{icon}",
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
         "format-alt-click": "click-right",
@@ -145,6 +144,7 @@
     },
 
     "pulseaudio": {
+        "format": "{icon} {volume}%",
         "format-muted": "",
         "on-click": "~/.config/HyprV/waybar/scripts/volume --toggle",
         "on-click-right": "pavucontrol",
