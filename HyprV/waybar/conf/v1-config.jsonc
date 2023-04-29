@@ -9,7 +9,7 @@
     "modules-left": ["clock","custom/weather","wlr/workspaces"],
     "modules-center": ["hyprland/window"],
     "modules-right": ["network", "bluetooth", "temperature","custom/power_profile","battery","backlight","pulseaudio","pulseaudio#microphone","tray","custom/myhyprv","custom/light_dark"],
-    "include": ["~/.config/HyprV/waybar/conf/asus-rog.jsonc", "~/.config/HyprV/waybar/conf/hyprv-util.jsonc"],
+    "include": ["~/.config/HyprV/waybar/conf/hyprv-util.jsonc"],
     
     "hyprland/window": {
         "format": "{}"
