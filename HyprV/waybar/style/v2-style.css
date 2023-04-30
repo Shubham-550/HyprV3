@@ -27,16 +27,16 @@ tooltip label{
 
 #workspaces button {
     padding: 5px;
-    color: #313244;
+    color: #a6adc8;
     margin-right: 5px;
 }
 
 #workspaces button.active {
-    color: #a6adc8;
+    color: #313244;
 }
 
 #workspaces button.focused {
-    color: #a6adc8;
+    color: #313244;
     background: #eba0ac;
     border-radius: 10px;
 }
@@ -48,12 +48,13 @@ tooltip label{
 }
 
 #workspaces button:hover {
-    background: #11111b;
-    color: #cdd6f4;
+    background: #bbbbbb;
+    color: #34343d;
     border-radius: 10px;
 }
 
 #custom-launch_wofi,
+#taskbar,
 #custom-lock_screen,
 #custom-light_dark,
 #custom-power_btn,
@@ -85,7 +86,7 @@ tooltip label{
     border-radius: 10px 0px 0px 10px;
 }
 
-#custom-light_dark, #custom-power_btn, #workspaces, #pulseaudio.microphone, #battery, #disk{
+#custom-light_dark, #custom-power_btn, #workspaces, #pulseaudio.microphone, #disk{
     border-radius: 0px 10px 10px 0px;
     margin-right: 10px;
 }
@@ -131,6 +132,19 @@ tooltip label{
 }
 
 #battery {
-    color: #1d7715;
+    border-radius: 10px 10px 10px 10px;
+    margin-right: 10px;
+    color: #4fc045;
     border-left: 0px;
+}
+
+#taskbar {
+    border-radius: 10px 10px 10px 10px;
+    margin-right: 10px;
+    border-left: 0px;
+}
+
+#taskbar button:hover {
+    background: #a0a0a0;
+    border-radius: 10px;
 }

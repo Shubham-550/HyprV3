@@ -6,9 +6,9 @@
     "passthrough": false,
     "gtk-layer-shell": true,
     "height": 50,
-    "modules-left": ["custom/launch_wofi","wlr/workspaces","cpu","memory","disk","hyprland/window"],
+    "modules-left": ["custom/launch_wofi","wlr/workspaces","wlr/taskbar"],
     "modules-center": ["custom/lock_screen","custom/updates","clock","custom/power_btn"],
-    "modules-right": ["temperature","custom/power_profile","battery","backlight","pulseaudio","pulseaudio#microphone","tray","custom/weather","custom/myhyprv","custom/light_dark"],
+    "modules-right": ["cpu","memory","disk","temperature","custom/power_profile","battery","backlight","pulseaudio","pulseaudio#microphone","tray","custom/weather","custom/myhyprv","custom/light_dark"],
     "include": ["~/.config/HyprV/waybar/conf/hyprv-util.jsonc"],
 
     "hyprland/window": {
@@ -35,33 +35,45 @@
 
     "cpu": {
         "interval": 1,
-        "format": " {usage}%",
+        "format": " {max_frequency}",
         "max-length": 10,
         "format-alt-click": "click-right",
         "format-alt": "",
         "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
     },
 
-    "disk": {
-        "interval": 30,
-        "format": "󰋊 {percentage_used}%",
-        "path": "/",
-        "format-alt-click": "click-right",
-        "format-alt": "󰋊 {percentage_used}%",
-        "tooltip": true,
-        "tooltip-format": "HDD - {used} used out of {total} on {path} ({percentage_used}%)",
-        "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
-    },
-
     "memory": {
         "interval": 30,
-        "format": "",
+        "format": " {used:0.1f}GB",
         "format-alt-click": "click-right",
         "format-alt": " {}%",
         "max-length": 10,
         "tooltip": true,
-        "tooltip-format": "Memory - {used:0.1f}GB used",
+        "tooltip-format": "Memory - {used:0.1f}GB ({}%) used",
         "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
+    },
+
+    "disk": {
+        "interval": 30,
+        "format": "󰋊 {used}",
+        "path": "/",
+        "format-alt-click": "click-right",
+        "format-alt": "󰋊 {percentage_used}%",
+        "tooltip": true,
+        "tooltip-format": "SSD - {used} ({percentage_used}%) used out of {total} on {path}",
+        "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
+    },
+
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 25,
+        "all-outputs": true,
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-middle": "close",
+        "ignore-list": [
+            "wofi"
+         ]
     },
 
     "custom/updates": {

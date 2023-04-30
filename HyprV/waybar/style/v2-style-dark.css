@@ -54,6 +54,7 @@ tooltip label{
 }
 
 #custom-launch_wofi,
+#taskbar,
 #custom-lock_screen,
 #custom-light_dark,
 #custom-power_btn,
@@ -85,7 +86,7 @@ tooltip label{
     border-radius: 10px 0px 0px 10px;
 }
 
-#custom-light_dark, #custom-power_btn, #workspaces, #pulseaudio.microphone, #battery, #disk {
+#custom-light_dark, #custom-power_btn, #workspaces, #pulseaudio.microphone, #disk {
     border-radius: 0px 10px 10px 0px;
     margin-right: 10px;
 }
@@ -131,6 +132,19 @@ tooltip label{
 }
 
 #battery {
+    border-radius: 10px 10px 10px 10px;
+    margin-right: 10px;
     color: #a6e3a1;
     border-left: 0px;
+}
+
+#taskbar {
+    border-radius: 10px 10px 10px 10px;
+    margin-right: 10px;
+    border-left: 0px;
+}
+
+#taskbar button:hover {
+    background: #11111b;
+    border-radius: 10px;
 }
