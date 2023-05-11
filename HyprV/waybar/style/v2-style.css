@@ -77,8 +77,8 @@ tooltip label{
     background: #e7e7ec;
     opacity: 0.8;
     padding: 0px 10px;
-    margin: 3px 0px;
-    margin-top: 10px;
+    margin: 0px 0px;
+    margin-top: 2px;
     border: 0px;
 }
 
@@ -148,3 +148,14 @@ tooltip label{
     background: #a0a0a0;
     border-radius: 10px;
 }
+
+#custom-media {
+    color: #8aadf4;
+    border-radius: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 1.5 solid #181926;
+    background-color: #181926;
+    margin: 2px;
+    /* border: 1.5 solid rgba(198, 160, 246, 0.5); */ 
+   }

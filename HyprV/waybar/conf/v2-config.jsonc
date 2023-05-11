@@ -5,9 +5,9 @@
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
-    "height": 50,
+    "height": 35,
     "modules-left": ["custom/launch_wofi","wlr/workspaces","wlr/taskbar"],
-    "modules-center": ["custom/lock_screen","custom/updates","clock","custom/power_btn"],
+    "modules-center": ["custom/lock_screen","custom/updates","clock","custom/power_btn","custom/media"],
     "modules-right": ["cpu","memory","disk","temperature","custom/power_profile","battery","backlight","pulseaudio","pulseaudio#microphone","tray","custom/weather","custom/myhyprv","custom/light_dark"],
     "include": ["~/.config/HyprV/waybar/conf/hyprv-util.jsonc"],
 
@@ -56,7 +56,7 @@
     "disk": {
         "interval": 30,
         "format": "󰋊 {used}",
-        "path": "/",
+        "path": "/home",
         "format-alt-click": "click-right",
         "format-alt": "󰋊 {percentage_used}%",
         "tooltip": true,
@@ -188,6 +188,20 @@
         "tooltip": false,
         "tooltip-format": " at {volume}%"
     },
+
+    "custom/media": {
+		"format": "{icon} {}",
+		"return-type": "json",
+		"max-length": 32,
+		"escape": true,
+		"format-icons": {
+			"default": " "
+		},
+		"on-click": "playerctl play-pause",
+		"on-click-forward": "playerctl next",
+		"on-click-backward": "playerctl previous",
+		"exec": "~/.config/HyprV/waybar/scripts/mediaplayer.py 2> /dev/null"
+	},
     
     "temperature": {
         "thermal-zone": 1,
