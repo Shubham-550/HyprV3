@@ -1,0 +1,204 @@
+{
+    "mods": [
+        {
+            "enabled": true,
+            "name": "506th IR - Mod Pack 3.6.4",
+            "path": "/media/Drive1/Arma 3/ARMA 3 Mods/506th Modpacks/@506th"
+        },
+        {
+            "enabled": true,
+            "name": "506th IR - Clientside - Better Inventory",
+            "path": "/media/Drive1/Arma 3/ARMA 3 Mods/506th Modpacks/@506th_BetterInventory"
+        },
+        {
+            "enabled": true,
+            "name": "506th IR - CBA v3.15.8",
+            "path": "/media/Drive1/Arma 3/ARMA 3 Mods/506th Modpacks/@506th_CBA"
+        },
+        {
+            "enabled": true,
+            "name": "506th IR - ACE v3.15.2",
+            "path": "/media/Drive1/Arma 3/ARMA 3 Mods/506th Modpacks/@506th_ACE"
+        },
+        {
+            "enabled": true,
+            "name": "506th IR - Clientside - JSRS Sound Improvements",
+            "path": "/media/Drive1/Arma 3/ARMA 3 Mods/506th Modpacks/@506th_ClientsideJSRS"
+        },
+        {
+            "enabled": true,
+            "name": "506th IR - CUP Terrains - Core v1.17.1",
+            "path": "/media/Drive1/Arma 3/ARMA 3 Mods/506th Modpacks/@506th_CUP_Core"
+        },
+        {
+            "enabled": true,
+            "name": "506th IR - CUP Terrains - Maps v1.16.0",
+            "path": "/media/Drive1/Arma 3/ARMA 3 Mods/506th Modpacks/@506th_CUP_Maps"
+        },
+        {
+            "enabled": true,
+            "name": "506th IR - Clientside - Immerse",
+            "path": "/media/Drive1/Arma 3/ARMA 3 Mods/506th Modpacks/@506th_Immerse"
+        },
+        {
+            "enabled": true,
+            "name": "506th IR - Maps Pack 1.3",
+            "path": "/media/Drive1/Arma 3/ARMA 3 Mods/506th Modpacks/@506th_Maps"
+        },
+        {
+            "enabled": true,
+            "name": "506th IR - RHS: Armed Forces of the Russian Federation v0.5.6",
+            "path": "/media/Drive1/Arma 3/ARMA 3 Mods/506th Modpacks/@506th_RHSAFRF"
+        },
+        {
+            "enabled": true,
+            "name": "506th IR - RHS: GREF v0.5.6",
+            "path": "/media/Drive1/Arma 3/ARMA 3 Mods/506th Modpacks/@506th_RHSGREF"
+        },
+        {
+            "enabled": true,
+            "name": "506th IR - RHS: Serbian Armed Forces v0.5.6",
+            "path": "/media/Drive1/Arma 3/ARMA 3 Mods/506th Modpacks/@506th_RHSSAF"
+        },
+        {
+            "enabled": true,
+            "name": "506th IR - RHS: United States Forces v0.5.6",
+            "path": "/media/Drive1/Arma 3/ARMA 3 Mods/506th Modpacks/@506th_RHSUSAF"
+        },
+        {
+            "enabled": true,
+            "name": "506th IR - Task Force Radio (TFAR) v1.0.327",
+            "path": "/media/Drive1/Arma 3/ARMA 3 Mods/506th Modpacks/@506th_TFAR"
+        },
+        {
+            "enabled": true,
+            "name": "506th IR - Terrain Grid Menu",
+            "path": "/media/Drive1/Arma 3/ARMA 3 Mods/506th Modpacks/@506th_TGM"
+        },
+        {
+            "enabled": true,
+            "name": "506th IR - Clientside - Thermal Improvement",
+            "path": "/media/Drive1/Arma 3/ARMA 3 Mods/506th Modpacks/@506thIRClientsideThermalImprovement"
+        },
+        {
+            "enabled": false,
+            "name": "506th IR - Clientside - ShackTac User Interface",
+            "path": "/media/Drive1/Arma 3/ARMA 3 Mods/506th Modpacks/@506thIRClientsideShacktac"
+        },
+        {
+            "enabled": false,
+            "name": "506th IR - Clientside - VileHUD",
+            "path": "/media/Drive1/Arma 3/ARMA 3 Mods/506th Modpacks/@506thIRVileHUD"
+        },
+        {
+            "enabled": false,
+            "name": "506th IR - Devas Auto Pilot",
+            "path": "/media/Drive1/Arma 3/ARMA 3 Mods/506th Modpacks/@506th_DevasAutoPilot"
+        },
+        {
+            "enabled": false,
+            "name": "506th IR - Clientside - Additional Measurements",
+            "path": "/media/Drive1/Arma 3/ARMA 3 Mods/506th Modpacks/@506th_Clientside_AdditionalMeasurements"
+        },
+        {
+            "enabled": false,
+            "name": "Public Mod Pack 3.6.0 [506th IR]",
+            "path": "/media/Drive1/Arma 3/ARMA 3 Mods/506th Modpacks/@PublicModpack506th"
+        },
+        {
+            "enabled": false,
+            "name": "Archipelago",
+            "path": "1726184748"
+        },
+        {
+            "enabled": false,
+            "name": "Blastcore Murr Edition",
+            "path": "2257686620"
+        },
+        {
+            "enabled": false,
+            "name": "CBA_A3",
+            "path": "450814997"
+        },
+        {
+            "enabled": false,
+            "name": "CUP Terrains - CWA",
+            "path": "853743366"
+        },
+        {
+            "enabled": false,
+            "name": "CUP Terrains - Core",
+            "path": "583496184"
+        },
+        {
+            "enabled": false,
+            "name": "CUP Terrains - Maps",
+            "path": "583544987"
+        },
+        {
+            "enabled": false,
+            "name": "CUP Weapons",
+            "path": "497660133"
+        },
+        {
+            "enabled": false,
+            "name": "Chinese Armed Forces ('20s)",
+            "path": "2895780628"
+        },
+        {
+            "enabled": false,
+            "name": "LZB PLA",
+            "path": "2364111939"
+        },
+        {
+            "enabled": false,
+            "name": "Multi-play Uniforms",
+            "path": "779520435"
+        },
+        {
+            "enabled": false,
+            "name": "NIArms All in One- ACE Compatibility (FIXED)",
+            "path": "2730887493"
+        },
+        {
+            "enabled": false,
+            "name": "PLA Armored Vehicles Pack",
+            "path": "2578187969"
+        },
+        {
+            "enabled": false,
+            "name": "RHSAFRF",
+            "path": "843425103"
+        },
+        {
+            "enabled": false,
+            "name": "RHSGREF",
+            "path": "843593391"
+        },
+        {
+            "enabled": false,
+            "name": "RHSPKL",
+            "path": "1978754337"
+        },
+        {
+            "enabled": false,
+            "name": "RHSSAF",
+            "path": "843632231"
+        },
+        {
+            "enabled": false,
+            "name": "RHSUSAF",
+            "path": "843577117"
+        },
+        {
+            "enabled": false,
+            "name": "SU-35 Flanker E",
+            "path": "743108251"
+        },
+        {
+            "enabled": false,
+            "name": "ace",
+            "path": "463939057"
+        }
+    ]
+}

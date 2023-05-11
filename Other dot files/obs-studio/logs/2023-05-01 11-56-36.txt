@@ -1,0 +1,94 @@
+11:56:36.581: Platform: Wayland
+11:56:36.582: CPU Name: AMD Ryzen 7 5800H with Radeon Graphics
+11:56:36.582: CPU Speed: 3349.374MHz
+11:56:36.582: Physical Cores: 8, Logical Cores: 16
+11:56:36.582: Physical Memory: 31951MB Total, 28271MB Free
+11:56:36.582: Kernel Version: Linux 6.2.13-arch1-1
+11:56:36.582: Distribution: "Arch Linux" Unknown
+11:56:36.582: Session Type: wayland
+11:56:36.585: Qt Version: 6.5.0 (runtime), 6.4.2 (compiled)
+11:56:36.585: Portable mode: false
+11:56:36.613: OBS 29.0.2-2 (linux)
+11:56:36.613: ---------------------------------
+11:56:36.613: ---------------------------------
+11:56:36.613: audio settings reset:
+11:56:36.613: 	samples per sec: 48000
+11:56:36.613: 	speakers:        2
+11:56:36.613: 	max buffering:   960 milliseconds
+11:56:36.613: 	buffering type:  dynamically increasing
+11:56:36.614: ---------------------------------
+11:56:36.615: Initializing OpenGL...
+11:56:36.615: Using EGL/Wayland
+11:56:36.622: Initialized EGL 1.5
+11:56:36.647: Loading up OpenGL on adapter NVIDIA Corporation NVIDIA GeForce RTX 3070 Laptop GPU/PCIe/SSE2
+11:56:36.647: OpenGL loaded successfully, version 3.3.0 NVIDIA 530.41.03, shading language 3.30 NVIDIA via Cg compiler
+11:56:36.661: ---------------------------------
+11:56:36.661: video settings reset:
+11:56:36.661: 	base resolution:   2560x1600
+11:56:36.661: 	output resolution: 2560x1600
+11:56:36.661: 	downscale filter:  Bicubic
+11:56:36.661: 	fps:               60/1
+11:56:36.661: 	format:            NV12
+11:56:36.661: 	YUV mode:          Rec. 709/Partial
+11:56:36.662: NV12 texture support not available
+11:56:36.662: P010 texture support not available
+11:56:36.662: Audio monitoring device:
+11:56:36.662: 	name: Default
+11:56:36.662: 	id: default
+11:56:36.662: ---------------------------------
+11:56:36.666: Failed to load 'en-US' text for module: 'decklink-captions.so'
+11:56:36.671: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+11:56:36.674: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+11:56:36.674: Failed to initialize module 'decklink.so'
+11:56:36.748: [pipewire] Available captures:
+11:56:36.748: [pipewire]     - Desktop capture
+11:56:36.758: v4l2loopback not installed, virtual camera disabled
+11:56:36.768: NVENC supported
+11:56:36.768: LIBVA_DRIVER_NAME variable is set, this could prevent FFmpeg VAAPI from working correctly
+11:56:36.880: VAAPI: API version 1.18
+11:56:36.896: FFmpeg VAAPI H264 encoding supported
+11:56:36.933: ---------------------------------
+11:56:36.933:   Loaded Modules:
+11:56:36.933:     wlrobs.so
+11:56:36.933:     text-freetype2.so
+11:56:36.933:     rtmp-services.so
+11:56:36.933:     obs-x264.so
+11:56:36.933:     obs-vst.so
+11:56:36.933:     obs-transitions.so
+11:56:36.933:     obs-outputs.so
+11:56:36.933:     obs-libfdk.so
+11:56:36.933:     obs-filters.so
+11:56:36.933:     obs-ffmpeg.so
+11:56:36.933:     linux-v4l2.so
+11:56:36.933:     linux-pulseaudio.so
+11:56:36.933:     linux-pipewire.so
+11:56:36.933:     linux-jack.so
+11:56:36.933:     linux-capture.so
+11:56:36.933:     linux-alsa.so
+11:56:36.933:     image-source.so
+11:56:36.933:     frontend-tools.so
+11:56:36.933:     decklink-output-ui.so
+11:56:36.933:     decklink-captions.so
+11:56:36.933: ---------------------------------
+11:56:36.933: ==== Startup complete ===============================================
+11:56:36.955: All scene data cleared
+11:56:36.955: ------------------------------------------------
+11:56:36.961: pulse-input: Server name: 'PulseAudio (on PipeWire 0.3.70) 15.0.0'
+11:56:36.961: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+11:56:36.961: pulse-input: Started recording from 'alsa_output.usb-HP__Inc_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo.monitor' (default)
+11:56:36.961: [Loaded global audio device]: 'Desktop Audio'
+11:56:36.961: pulse-input: Server name: 'PulseAudio (on PipeWire 0.3.70) 15.0.0'
+11:56:36.961: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+11:56:36.962: pulse-input: Started recording from 'alsa_input.usb-HP__Inc_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo' (default)
+11:56:36.962: [Loaded global audio device]: 'Mic/Aux'
+11:56:36.962:     - filter: 'Noise Suppression' (noise_suppress_filter_v2)
+11:56:36.963: Switched to scene 'Scene'
+11:56:36.963: ------------------------------------------------
+11:56:36.963: Loaded scenes:
+11:56:36.963: - scene 'Scene':
+11:56:36.963:     - source: 'Wayland output(scpy)' (wlrobs-scpy)
+11:56:36.963: ------------------------------------------------
+11:56:37.552: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Desktop Audio)
+11:56:37.552: 
+11:56:37.638: adding 21 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Mic/Aux)
+11:56:37.638: 
